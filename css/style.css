@@ -1,0 +1,857 @@
+/*------------------------------------*\
+
+Template : Learn Map
+Version: 1.0
+Designed and Coded by: Kamal Eddin Alhomsi [UI Developer and Android Apllication Developer]
+My Email : Kamalalhomsi2015@gmail.com
+
+\*------------------------------------*/
+
+/**- Table of content
+ *  Imports
+ *  General setting
+ *  Header
+ *  Slider
+ *  Features
+ *  What We Do ?
+ *  We Are We ?
+ *  Learning Planes
+ *  what they say ?
+ *  Our Partners
+ *  Footer
+ *  Modals Style
+ *  Responsive
+ */
+
+/*------------------------------------*\
+
+
+/*------------------------------------*\
+    #IMPORTS
+\*------------------------------------*/
+
+@import 'fonts.css';
+
+/*------------------------------------*\
+    #GENERAL SETTING
+\*------------------------------------*/
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #fafafa;
+	/* Global Font Family */
+	font-family: "Sukar" , sans-serif;
+	font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px !important;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p{
+	font-weight: 300;
+}
+
+.align-center {
+	text-align: center;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #666;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #666;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #666;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #666;
+}
+
+.clearfix:after {
+	clear: both;
+	content: '';
+}
+
+.background-blue {
+	background-color: #1e88e5 !important;
+}
+
+.inner_content {
+	margin-top: 20px;
+}
+
+.new_section {
+	margin-top: 50px;
+	width: 100%;
+	max-width: 100%;
+}
+
+.title_sction {
+	width: 100%;
+}
+
+.h1_title_sction {
+	color: #1e88e5;
+	font-size: 48px;
+	font-family: "Sukar";
+}
+
+.line_main_title_gray {
+	width: 90%;
+	height: 2px;
+	background-color: #666;
+	position: absolute;
+	margin-top: 10px;
+}
+
+.line_main_title_blue {
+	width: 200px;
+	height: 3px;
+	background-color: #1e88e5;
+	position: absolute;
+	margin-top: 10px;
+}
+
+.inner_content_sction {
+	margin-top: 60px;
+}
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.nav_ul {
+	float: left;
+}
+
+.logo {
+	font-family: "Sukar";
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 30px;
+}
+
+.navbar {
+	min-height: 80px;
+}
+
+.navbar-default {
+	background-color: #fff;
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	border: 0px;
+}
+
+.a_nav {
+	font-family: "Sukar";
+	font-weight: bold;
+	font-size: 18px;
+	margin-left: 15px !important;
+	color: #666;
+	padding-top: 28px !important;
+	transition: 0.2s ease-in-out;
+	border-top: 2px solid #fff; 
+}
+
+.a_nav:hover {
+	color: #1e88e5 !important;
+	border-top: 2px solid #1e88e5;
+}
+
+.dropdown-toggle:focus {
+	background-color: #fff !important; 
+	color: #1e88e5 !important;
+}
+
+.dropdown-menu {
+	text-align: center;
+	padding: 0px;
+	border: 0px;
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu > li {
+	display: inline-block;
+	width: 100%;
+}
+
+.dropdown-menu > li > a {
+	font-family: "Sukar";
+	transition: 0.2s ease-in-out;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.dropdown-menu > li > a:hover {
+	background-color: #1e88e5;
+	color: #fff;
+}
+
+.btn-inside {
+	margin-top: 21px;
+	font-family: "Sukar";
+	background-color: #666;
+	color: #fff;
+	margin-left: 10px;
+	border-radius: 15px;
+	padding: 7px 15px;
+}
+
+.button_nav_responsive {
+	margin-top: 20px;
+	border: 1px solid #666 !important; 
+}
+
+/*------------------------------------*\
+    #MODALS STYLE
+\*------------------------------------*/
+
+.modal-content {
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	border: 0px;
+}
+
+.modal-header {
+	text-align: center;
+}
+
+.modal-header > h4 {
+	font-family: "Sukar";
+	font-weight: bold;
+	color: #1e88e5;
+}
+
+.title_input {
+	font-family: "Sukar";
+	color: #1e88e5;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.modal-body {
+	text-align: center;
+}
+
+.input_logoin {
+	padding: 10px 20px; 
+	font-family: "Sukar";
+	border: 1px solid #ddd;
+	width: 80%;
+	margin-bottom: 20px;
+}
+
+.input_logoin:focus {
+	border: 1px solid #1e88e5;
+}
+
+.input_logoin:focus ~ .icon-input {
+	border: 1px solid #1e88e5;
+}
+
+.icon-input {
+    padding: 13px 15px;
+    position: relative;
+    top: 1px;
+    border: 1px solid #ddd;
+    color: #666;
+}
+
+.inner_input {
+	display: block;
+	width: 100%;
+}
+
+.Submit_login {
+	width: 80%;
+	padding: 10px 20px; 
+	font-family: "Sukar";
+	background-color: #1e88e5;
+	border: 0px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 17px; 
+}
+
+.icon-submit {
+    padding: 15px 15px;
+    position: relative;
+    top: 1px;
+    color: #fff;
+    background-color: #1e88e5;
+    border-left: 1px solid #fff;
+}
+
+.inner_checkbox {
+    width: 87%;
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.icon_checkbox {
+	font-size: 20px;
+	color: #666;
+	padding-left:  15px;
+	padding-right: 15px;
+}
+
+/*------------------------------------*\
+    #SLIDER
+\*------------------------------------*/
+
+.owl-carousel div img {
+	width: 100%;
+	display: block;
+}
+
+.owl-stage {
+	padding-right: 0px !important;
+	padding-left: 0px  !important;
+}
+
+.owl-prev , .owl-next {
+	position: absolute;
+	top: 45%;
+	font-size: 35px;
+	color: #fff;
+	background-color: rgba(102, 102, 102, 0.8);
+	padding: 10px 28px;
+	border-radius: 50%;
+}
+
+.button_slider {
+	padding: 10px 25px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	color: #fff;
+	font-family: "Sukar";
+	font-size: 14px;
+	margin-right: 20px;
+	margin-left: 20px;
+	transition: 0.2s;
+}
+
+.owl-prev i , .owl-next i {
+	position: relative;
+	top: 3px;
+}
+
+.owl-prev i {
+	right: 2px;
+}
+
+.owl-newt i {
+	left: 2px;
+}
+
+.owl-prev {
+	left: 110px;
+}
+
+.owl-next {
+	right: 110px;
+}
+
+.container_image_slider {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.container_image_slider .after_image_slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.62);
+	text-align: center;
+	padding-top: 20%;
+}
+
+.title_slider {
+	color: #fff;
+	font-size: 48px;
+	font-family: "Sukar";
+	font-weight: bold;
+}
+
+.corsat_word {
+	color: #1e88e5;
+}
+
+.p_slider {
+	font-size: 24px;
+	font-family: "Greta";
+	margin-top: 25px;
+	color: #fff;
+	font-weight: lighter;
+}
+
+.inner_buttons_slider {
+	margin-top: 25px;
+}
+
+.background_full {
+	background-color: #1e88e5 !important;
+	border: 2px solid #1e88e5 !important;
+}
+
+.animated  {
+  -webkit-animation-duration : 1000 ms  ;
+  animation-duration : 1000 ms  ;
+  -webkit-animation-fill-mode : both  ;
+  animation-fill-mode : both  ;
+}  
+
+.owl-animated-out {
+  z-index : 1 
+   }
+
+.owl-animated-in {
+  z-index : 0 
+   }
+
+.fadeOut  {
+  -webkit-animation-name : fadeOut  ;
+  animation-name : fadeOut  ;
+}  
+@-webkit-keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+@keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+
+/*------------------------------------*\
+    #OUR FEATURES
+\*------------------------------------*/
+
+.title_features {
+	font-family: "Sukar";
+	color: #1e88e5;
+	display: inline-block;
+	position: relative;
+	bottom: 7px;
+}
+
+.icon_features {
+	font-size: 40px;
+	padding-left: 15px;
+	display: inline-block;
+	color: #1e88e5;
+}
+
+.p_features {
+	margin-top: 20px;
+	font-family: "Greta";
+	font-size: 16px;
+	margin-bottom: 30px;
+	color: #666;
+}
+
+.special_title_sction {
+	width: 95%;
+}
+
+/*------------------------------------*\
+    #WHAT WE DO ?
+\*------------------------------------*/
+
+.icon_what_we_do {
+	font-size: 20px;
+	color: #1e88e5;
+	padding: 10px 10px;
+	border: 2px solid #1e88e5;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.big_icon {
+	font-size: 18px;
+}
+
+.double_angle {
+	display: inline-block;
+	font-size: 20px;
+	color: #1e88e5;
+	margin-right: 10px;
+}
+
+.box_what_we_do {
+	display: inline-block;
+	width: 100%;
+	min-height: 170px;
+	background-color: #fff;
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+.p_what_we_do {
+	font-family: "Greta";
+	color: #666;
+	font-size: 16px;
+}
+
+.inner_box_what_we_do {
+	margin-bottom: 30px;
+}
+
+.line_what_we_do {
+	display: block;
+	width: 2px;
+	height: 166px;
+	background-color: #cccccc;
+	position: absolute;
+	right: 35px;
+}
+
+/*------------------------------------*\
+    #WHO ARE WE ?
+\*------------------------------------*/
+
+.p_who_are_we {
+	font-family: "Greta";
+	color: #666;
+	font-size: 16px; 
+}
+
+.inner_text_who_are_we {
+	text-align: center;
+}
+
+.inner_text_who_are_we h2{
+	color: #1e88e5;
+}
+
+.social_media {
+	margin-top: 20px;
+}
+
+.icon_social_media {
+	border: 2px solid #666;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	font-size: 18px;
+	color: #666;
+	text-align: center;
+	padding-top: 12px;
+	margin-left:  5px;
+	margin-right: 5px;
+	transition: 0.2s ease-in-out;
+}
+
+.icon_social_media:hover {
+	color: #fff;
+	border: 2px solid #1e88e5;
+	background-color: #1e88e5;
+}
+
+/*------------------------------------*\
+    #LEARNING PLANES
+\*------------------------------------*/
+
+.inner_box_plane {
+	width: 100%;
+	min-height: 400px;
+	background-color: #fff;
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.plane_backround {
+	width: 100%;
+	min-height: 250px;
+	background-color: #2962ff;
+	text-align: center;
+}
+
+.plane_backround > h1 {
+	color: #fff;
+	padding-top: 30%;
+}
+
+.inner_box_plane > h3 {
+	padding-top: 30px;
+}
+
+.btn_plane {
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid #666;
+    border-radius: 20px;
+    color: #666;
+    font-family: "Sukar";
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.btn_plane:hover {
+	border: 2px solid #1e88e5;
+	background-color: #1e88e5;
+	color: #fff;
+}
+
+.inner_button_list_course {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.inner_button_list_course .button_style {
+	padding: 10px 25px;
+	background-color: transparent;
+	border: 2px solid #666;
+	border-radius: 20px;
+	color: #666;
+	font-family: "Sukar";
+	font-weight: bold;
+	transition: 0.2s;
+}
+
+.inner_button_list_course .button_style:hover {
+	color: #fff;
+	background-color: #1e88e5;
+	border-color: #1e88e5;
+}
+
+/*------------------------------------*\
+    #WHAT THEY SAY ?
+\*------------------------------------*/
+
+.slider_2 {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.inner_image_what_they_sat {
+	height: 120px;
+	width: 120px;
+	margin: 20px auto;
+}
+
+.slider_what_they_say {
+	text-align: center;
+}
+
+.inner_image_what_they_sat > img {
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	border: 3px solid #666;
+}
+
+.content_what_they_say {
+	margin-top: 30px;
+}
+
+.content_what_they_say > h3 {
+	color: #1e88e5;
+}
+
+.content_what_they_say > p {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-family: "Greta";
+	font-size: 16px;
+}
+
+/*------------------------------------*\
+    #OUE PARTNERS
+\*------------------------------------*/
+
+.our_partners {
+	background-color: #ddd;
+	min-height: 350px;
+}
+
+.slider_3 {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.owl-carousel .owl-item img {
+	margin-top: 60px;
+}
+
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+footer {
+	width: 100%;
+	height: 300px;
+	background-color: #666;
+	text-align: center;
+}
+
+.slide_to_top {
+	width: 50px;
+	height: 50px;
+	border: 0px;
+	background-color: #fff;
+	color: #666;
+	border-radius: 50%;
+    box-shadow: 0px 5px 3.25px 1.75px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 25px;
+    display: inline-block;
+}
+
+.slide_to_top i { 
+	font-size: 25px;
+	padding-top: 11px;
+}
+
+.header_footer {
+	margin-top: 20px;
+}
+
+.header_footer ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.header_footer ul li a {
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 17px;
+	color: #fff;
+	transition: 0.2s;
+}
+
+.header_footer ul li a:hover {
+	color: #1e88e5;
+}
+
+.footer_social  {
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.footer_social:hover {
+	border: 2px solid #1e88e5 !important;
+}
+
+.inner_footer_social {
+	margin-top: 30px;
+}
+
+.copy_right {
+	font-family: "Greta";
+	color: #fff;
+}
+
+.copy_right:before {
+	content: ' ';
+	display: block;
+	width: 50%;
+	height: 2px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+/*------------------------------------*\
+    #RESPONSIVE
+\*------------------------------------*/
+
+@media (max-width: 768px) {
+	.navbar-collapse{
+		width: 100%;
+		margin-top: 20px;
+		border: 0px;
+	}
+	.icon_what_we_do {
+		display: none;
+	}
+	.line_what_we_do {
+		display: none;
+	}
+	.double_angle {
+		display: none;
+	}
+	.box_what_we_do {
+		min-height: 140px;
+	}
+	.plane_backround > h1 {
+		padding-top: 15%;
+	}
+}
+
+@media (max-width: 425px) {
+	.responsive_slider {
+		display: none !important;
+	}
+	.responsive_Features {
+		margin-top: 120px;
+	} 
+	.plane_backround > h1 {
+		padding-top: 30%;
+	}
+	.owl-carousel {
+		display: none;
+	}
+	.a_nav:hover {
+		border: 0px solid #fff;
+	}
+}
